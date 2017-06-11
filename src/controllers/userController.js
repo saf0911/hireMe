@@ -46,7 +46,22 @@ const userController = {
 
   //eslint-disable-next-line
   update: (request, response, next) => {
-    return ('updating stuff');
+    User.findById(request.params.id).exec()
+      .then(user => {
+        user.firstName = request.body.firstName || user.firstName;
+        user.lastName = request.body.lastName || user.lastName;
+        user.avatar = request.body.avatar || user.avatar;
+        user.interests = request.body.interests || user.interests;
+        user.userName = request.body.userName || user.userName;
+
+        return user.save();
+      })
+      .then(changedUser => {
+        return response.json(changedUser);
+      })
+      .catch(err => {
+        return next(err);
+      });
   }
 
 };
