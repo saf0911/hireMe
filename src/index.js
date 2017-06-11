@@ -4,6 +4,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import AuthenicationRoute from './routes/AuthenicationRoute';
 import userRoutes from './routes/userRoutes';
+import bodyParser from 'body-parser';
 
 const dev = process.env.NODE_ENV !== 'production';
 const nextApp = next({
@@ -17,7 +18,10 @@ const PORT = process.env.Port || 3001;
 nextApp.prepare().then(() => {
   const app = express();
 
+  app.use(bodyParser.json());
+
   // Define all you backend handlers here...
+  mongoose.Promise = global.Promise;
   mongoose.connect('mongodb://localhost/DatingSite');
 
   const db = mongoose.connection;
