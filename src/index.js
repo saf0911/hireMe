@@ -2,6 +2,8 @@ import next from 'next';
 import path from 'path';
 import express from 'express';
 import mongoose from 'mongoose';
+import AuthenicationRoute from './routes/AuthenicationRoute';
+import userRoutes from './routes/userRoutes';
 
 const dev = process.env.NODE_ENV !== 'production';
 const nextApp = next({
@@ -10,7 +12,7 @@ const nextApp = next({
 });
 const handle = nextApp.getRequestHandler();
 
-const PORT = 3001;
+const PORT = process.env.Port || 3001;
 
 nextApp.prepare().then(() => {
   const app = express();
@@ -21,9 +23,12 @@ nextApp.prepare().then(() => {
   const db = mongoose.connection;
 
   db.on('error', console.error.bind(console, 'connection error'));
-  db.once('open', function() {
+  db.once('open', function () {
     console.log('we are connected!');
   });
+
+  app.use(AuthenicationRoute);
+  app.use(userRoutes);
   // Handle everything that is not covered in above routes with next.js
   app.get('*', (request, response) => {
     return handle(request, response);

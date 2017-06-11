@@ -1,5 +1,5 @@
 import React from 'react';
-import User from '../models/Users';
+import UserDetails from './UserDetails';
 import PropTypes from 'prop-types';
 
 function ListOfUsers(props) {
@@ -7,7 +7,7 @@ function ListOfUsers(props) {
     <div>
       {props.users.map((users, key) => {
         return (
-          <User
+          <UserDetails
             users={users}
             key={key}
             userSelect={() => {
