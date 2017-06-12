@@ -2,6 +2,8 @@ import React from 'react';
 // import Link from 'next/link';
 import Header from '../components/Header';
 import ListOfUsers from '../components/ListOfUsers';
+import withRedux from 'next-redux-wrapper';
+import {initStore} from '../store';
 
 
 
@@ -28,4 +30,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default withRedux(initStore, null, null)(AboutPage);
