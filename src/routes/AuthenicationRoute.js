@@ -51,7 +51,7 @@ authRouter.post('/api/signin', signinStrategy, (request, response) => {
 });
 
 
-authRouter.post('/singup', (request, response) => {
+authRouter.post('/signup', (request, response) => {
   response.json({message: 'welcome'});
 });
 

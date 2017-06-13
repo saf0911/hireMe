@@ -19,6 +19,7 @@ function Header() {
     <Link href="/logout">
       <a>Log Out</a>
     </Link>
+
   </div>
   );
 }
