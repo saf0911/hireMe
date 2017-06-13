@@ -6,6 +6,7 @@ import AuthenicationRoute from './routes/AuthenicationRoute';
 import userRoutes from './routes/userRoutes';
 import bodyParser from 'body-parser';
 
+
 const dev = process.env.NODE_ENV !== 'production';
 const nextApp = next({
   dev,
