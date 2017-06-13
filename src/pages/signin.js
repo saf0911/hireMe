@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import {initStore} from '../store';
+import withRedux from 'next-redux-wrapper';
 
 
 
@@ -19,4 +21,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default withRedux(initStore, null, null)(SignIn);
