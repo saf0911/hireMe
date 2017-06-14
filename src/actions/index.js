@@ -13,7 +13,7 @@ export function loadUsers() {
     }).then(users => {
       dispatch(usersLoaded(users))
       .catch(err => {
-        dispatch(loadUserError, err);
+        dispatch(loadUserError(), err);
       });
     });
   };
@@ -42,7 +42,7 @@ export function createUser(v) {
     })
       .then(() => dispatch(userCreated()))
       .catch(err => {
-        dispatch(createUserError, err);
+        dispatch(createUserError(), err);
       });
   };
 }
@@ -71,7 +71,7 @@ export function deleteUser(r) {
     })
       .then(() => dispatch(userDeleted))
       .catch(err => {
-        dispatch(deleteUserError, err);
+        dispatch(deleteUserError(), err);
       });
   };
 }

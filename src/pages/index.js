@@ -15,7 +15,8 @@ function IndexPage() {
       <Link href="/signin">
         <a>Sign In</a>
       </Link>
-      <Link href="/signup">
+      <br />
+      <Link href="/adduser">
         <a>Sign Up</a>
       </Link>
     </div>

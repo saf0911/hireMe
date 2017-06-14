@@ -32,6 +32,13 @@ nextApp.prepare().then(() => {
     console.log('we are connected!');
   });
 
+  // eslint-disable-next-line
+  app.use('*', (err, request, response, nextHandler) => {
+    return response.status(500).json({
+      message: err.message
+    });
+  });
+
   app.use(AuthenicationRoute);
   app.use(userRoutes);
   // Handle everything that is not covered in above routes with next.js

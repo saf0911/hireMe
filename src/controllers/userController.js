@@ -44,7 +44,7 @@ const userController = {
     });
   },
 
-  //eslint-disable-next-line
+
   update: (request, response, next) => {
     User.findById(request.params.id).exec()
       .then(user => {
