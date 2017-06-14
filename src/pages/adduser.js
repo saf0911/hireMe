@@ -25,7 +25,7 @@ class AddUserPage extends Component {
   }
 
   componentDidMount() {
-    this.props.loadUsers();
+    this.props.onMount();
   }
 
   handleInputChange(event) {
@@ -124,7 +124,8 @@ function mapDispatchToProps(dispatch) {
 
 AddUserPage.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-  loadUsers: PropTypes.func.isRequired
+  loadUsers: PropTypes.func.isRequired,
+  onMount: PropTypes.func.isRequired,
 };
 
 // null will be mapstatetoprops and mapdispatchtoprops
