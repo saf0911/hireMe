@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 // import Link from 'next/Link';
-import {loadUsers} from '../actions';
+import {loadUsers, deleteUser} from '../actions';
 import withRedux from 'next-redux-wrapper';
 import {initStore} from '../store';
 
@@ -12,6 +12,7 @@ class ListOfUsers extends Component {
 
   componentDidMount() {
     this.props.loadUsers();
+    this.props.deleteUser();
   }
 
   render() {
@@ -25,9 +26,10 @@ class ListOfUsers extends Component {
                 <li> {user.lastName} </li>
                 <li> {user.username} </li>
                 <li> {user.avatar} </li>
+              </ul>  
                 <a href={`/details?id=${user._id}`} >View User</a>
-                <button onClick={() => this.props.onUserDelete(user._id)} >Delete User</button>
-              </ul>
+                <button onClick={() => this.props.deleteUser(user._id)} >Delete User</button>
+
 
             </div>
 
@@ -41,8 +43,8 @@ class ListOfUsers extends Component {
 
 ListOfUsers.propTypes = {
   users: PropTypes.array.isRequired,
-  userSelect: PropTypes.func.isRequired,
-  onUserDelete: PropTypes.func,
+  // userSelect: PropTypes.func.isRequired,
+  deleteUser: PropTypes.func,
   loadUsers: PropTypes.func,
 };
 
@@ -53,6 +55,9 @@ function mapDispatchToProps(dispatch) {
   return {
     loadUsers: () => {
       dispatch(loadUsers());
+    },
+    deleteUser: () => {
+      dispatch(deleteUser());
     }
   };
 }

@@ -24,9 +24,7 @@ class AddUserPage extends Component {
 
   }
 
-  componentDidMount() {
-    this.props.onMount();
-  }
+
 
   handleInputChange(event) {
     this.setState({

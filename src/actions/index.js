@@ -12,9 +12,9 @@ export function loadUsers() {
       return response.json();
     }).then(users => {
       dispatch(usersLoaded(users))
-      .catch(err => {
-        dispatch(loadUserError(), err);
-      });
+        .catch(err => {
+          dispatch(loadUserError(), err);
+        });
     });
   };
 }
@@ -41,9 +41,9 @@ export function createUser(v) {
       body: JSON.stringify(v)
     })
       .then(() => dispatch(userCreated()))
-      .catch(err => {
-        dispatch(createUserError(), err);
-      });
+        .catch(err => {
+          dispatch(createUserError(), err);
+        });
   };
 }
 
@@ -70,9 +70,9 @@ export function deleteUser(r) {
       body: JSON.stringify(r)
     })
       .then(() => dispatch(userDeleted))
-      .catch(err => {
-        dispatch(deleteUserError(), err);
-      });
+        .catch(err => {
+          dispatch(deleteUserError(), err);
+        });
   };
 }
 
