@@ -70,9 +70,13 @@ export function deleteUser(id) {
     fetch(`/users/${id}`, {
       method: 'DELETE',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(id)
+
     })
-      .then(() => dispatch(userDeleted()))
+      .then(() => {
+        dispatch(userDeleted());
+        dispatch(loadUsers());
+      }
+    )
       .catch(err => {
         dispatch(deleteUserError(), err);
       });

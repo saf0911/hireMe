@@ -11,8 +11,6 @@ class ListOfUsers extends Component {
     this.props.loadUsers();
   }
 
-
-
   render() {
     return (
       <div>
