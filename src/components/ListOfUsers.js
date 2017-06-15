@@ -5,15 +5,13 @@ import {loadUsers, deleteUser} from '../actions';
 import withRedux from 'next-redux-wrapper';
 import {initStore} from '../store';
 
-class ListOfUsers extends Component {
-  constructor(props) {
-    super(props);
-  }
 
+class ListOfUsers extends Component {
   componentDidMount() {
     this.props.loadUsers();
-    this.props.deleteUser();
   }
+
+
 
   render() {
     return (
@@ -26,9 +24,12 @@ class ListOfUsers extends Component {
                 <li> {user.lastName} </li>
                 <li> {user.username} </li>
                 <li> {user.avatar} </li>
-              </ul>  
-                <a href={`/details?id=${user._id}`} >View User</a>
-                <button onClick={() => this.props.deleteUser(user._id)} >Delete User</button>
+              </ul>
+              <a href={`/details?id=${user._id}`} >View User</a>
+              <button onClick=
+                {() => this.props.deleteUser(`${user._id}`)} >
+                Delete User
+              </button>
 
 
             </div>
@@ -43,7 +44,7 @@ class ListOfUsers extends Component {
 
 ListOfUsers.propTypes = {
   users: PropTypes.array.isRequired,
-  // userSelect: PropTypes.func.isRequired,
+  userSelect: PropTypes.func,
   deleteUser: PropTypes.func,
   loadUsers: PropTypes.func,
 };
@@ -56,15 +57,17 @@ function mapDispatchToProps(dispatch) {
     loadUsers: () => {
       dispatch(loadUsers());
     },
-    deleteUser: () => {
-      dispatch(deleteUser());
+    deleteUser: id => {
+      console.log(id);
+      dispatch(deleteUser(id));
     }
   };
 }
 
 function mapStateToProps(state) {
   return {
-    users: state.users
+    users: state.users,
+    user: state.user
   };
 }
 

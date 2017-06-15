@@ -8,14 +8,15 @@ function loadUserError(message) {
 export function loadUsers() {
   return function (dispatch) {
     fetch('/users')
-    .then(response => {
-      return response.json();
-    }).then(users => {
-      dispatch(usersLoaded(users))
-        .catch(err => {
-          dispatch(loadUserError(), err);
-        });
-    });
+      .then(response => {
+        return response.json();
+      })
+      .then(users => {
+        dispatch(usersLoaded(users));
+      })
+      .catch(err => {
+        dispatch(loadUserError(), err);
+      });
   };
 }
 
@@ -40,10 +41,12 @@ export function createUser(v) {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(v)
     })
-      .then(() => dispatch(userCreated()))
-        .catch(err => {
-          dispatch(createUserError(), err);
-        });
+      .then(() => {
+        dispatch(userCreated());
+      })
+      .catch(err => {
+        dispatch(createUserError(), err);
+      });
   };
 }
 
@@ -62,21 +65,22 @@ function deleteUserError(message) {
   };
 }
 
-export function deleteUser(r) {
+export function deleteUser(id) {
   return function (dispatch) {
-    fetch('/users', {
-      method: 'Delete',
+    fetch(`/users/${id}`, {
+      method: 'DELETE',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(r)
+      body: JSON.stringify(id)
     })
-      .then(() => dispatch(userDeleted))
-        .catch(err => {
-          dispatch(deleteUserError(), err);
-        });
+      .then(() => dispatch(userDeleted()))
+      .catch(err => {
+        dispatch(deleteUserError(), err);
+      });
   };
 }
 
 function userDeleted(user) {
+  console.log('here it is');
   return {
     type: 'USERS_DELETED',
     value: user
