@@ -22,6 +22,7 @@ class ListOfUsers extends Component {
                 <li> {user.lastName} </li>
                 <li> {user.username} </li>
                 <li> {user.avatar} </li>
+                <li> {user.interests} </li>
               </ul>
               <a href={`/details?id=${user._id}`} >View User</a>
               <button onClick=

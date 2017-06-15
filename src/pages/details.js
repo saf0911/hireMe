@@ -56,8 +56,8 @@ Details.propTypes = {
 function mapDispatchToProps(dispatch) {
   console.log('why why why', dispatch);
   return {
-    getUserId: () => {
-      dispatch(getUserId());
+    getUserId: id => {
+      dispatch(getUserId(id));
     }
   };
 }

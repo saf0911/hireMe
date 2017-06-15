@@ -94,7 +94,7 @@ function userDeleted(user) {
 
 
 export function getUserId(id) {
-  console.log('what the shit man');
+  console.log('what the shit man', id);
   return function (dispatch) {
     console.log('here it is');
     fetch(`/users/${id}`)
