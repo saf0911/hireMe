@@ -37,6 +37,7 @@ nextApp.prepare().then(() => {
     return response.status(500).json({
       message: err.message
     });
+    
   });
 
   app.use(AuthenicationRoute);
