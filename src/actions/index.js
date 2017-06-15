@@ -1,3 +1,5 @@
+import fetch from 'isomorphic-fetch';
+
 function loadUserError(message) {
   return {
     type: 'USER_LOAD_ERROR',
@@ -70,7 +72,6 @@ export function deleteUser(id) {
     fetch(`/users/${id}`, {
       method: 'DELETE',
       headers: {'Content-Type': 'application/json'},
-
     })
       .then(() => {
         dispatch(userDeleted());
@@ -88,5 +89,26 @@ function userDeleted(user) {
   return {
     type: 'USERS_DELETED',
     value: user
+  };
+}
+
+
+export function getUserId(id) {
+  console.log('what the shit man');
+  return function (dispatch) {
+    console.log('here it is');
+    fetch(`/users/${id}`)
+    .then( response => {
+      return response.json();
+    })
+    .then(oneUser => {
+      dispatch(getUsersDone(oneUser));
+    });
+  };
+}
+function getUsersDone(user) {
+  return {
+    type: 'GET_USER_DONE',
+    value: user,
   };
 }

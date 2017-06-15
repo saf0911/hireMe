@@ -56,7 +56,6 @@ function mapDispatchToProps(dispatch) {
       dispatch(loadUsers());
     },
     deleteUser: id => {
-      console.log(id);
       dispatch(deleteUser(id));
     }
   };
