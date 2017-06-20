@@ -24,15 +24,11 @@ class AddUserPage extends Component {
 
   }
 
-
-
   handleInputChange(event) {
     this.setState({
       [event.target.name]: event.target.value
     });
   }
-
-
 
 
   handleSubmit(event) {

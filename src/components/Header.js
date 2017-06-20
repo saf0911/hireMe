@@ -16,9 +16,17 @@ function Header() {
     <Link href="/logout">
       <a>Sign Out</a>
     </Link>
-    <Link href="/logout">
-      <a>Log Out</a>
+    <Link href="/adduser">
+      <a>Add a User</a>
     </Link>
+
+    <style jsx>{`
+    a {
+      color: red;
+      margin: 10px;
+      font-size: 20px;
+    }
+  `}</style>
 
   </div>
   );

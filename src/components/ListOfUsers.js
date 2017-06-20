@@ -18,8 +18,6 @@ class ListOfUsers extends Component {
           return (
             <div key={key} >
               <ul>
-                <li> {user.firstName} </li>
-                <li> {user.lastName} </li>
                 <li> {user.username} </li>
                 <li> {user.avatar} </li>
                 <li> {user.interests} </li>

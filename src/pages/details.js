@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Header from '../components/Header';
 import PropTypes from 'prop-types';
-// import {loadUsers} from '../actions';
 import withRedux from 'next-redux-wrapper';
 import {initStore} from '../store';
 import { getUserId } from '../actions';
@@ -11,13 +10,10 @@ import { getUserId } from '../actions';
 class Details extends Component {
   constructor(props) {
     super(props);
-
-    console.log('is this thing even on');
   }
 
   componentDidMount() {
     this.props.getUserId(this.props.url.query.id);
-    console.log(this.props.url.query.id, 'checking');
   }
 
 
@@ -46,7 +42,6 @@ class Details extends Component {
 
 Details.propTypes = {
   user: PropTypes.object.isRequired,
-  loadUsers: PropTypes.func,
   getUserId: PropTypes.func,
   url: PropTypes.object,
   query: PropTypes.array,
@@ -54,7 +49,6 @@ Details.propTypes = {
 };
 
 function mapDispatchToProps(dispatch) {
-  console.log('why why why', dispatch);
   return {
     getUserId: id => {
       dispatch(getUserId(id));
@@ -63,7 +57,6 @@ function mapDispatchToProps(dispatch) {
 }
 
 function mapStateToProps(state) {
-  console.log('Map state to props', state);
   return {
     users: state.users,
     user: state.user

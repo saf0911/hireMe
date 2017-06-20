@@ -85,7 +85,6 @@ export function deleteUser(id) {
 }
 
 function userDeleted(user) {
-  console.log('here it is');
   return {
     type: 'USERS_DELETED',
     value: user
@@ -94,19 +93,17 @@ function userDeleted(user) {
 
 
 export function getUserId(id) {
-  console.log('what the shit man', id);
   return function (dispatch) {
-    console.log('here it is');
     fetch(`/users/${id}`)
     .then( response => {
       return response.json();
     })
     .then(oneUser => {
-      dispatch(getUsersDone(oneUser));
+      dispatch(getUserDone(oneUser));
     });
   };
 }
-function getUsersDone(user) {
+function getUserDone(user) {
   return {
     type: 'GET_USER_DONE',
     value: user,
