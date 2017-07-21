@@ -6,8 +6,8 @@ import withRedux from 'next-redux-wrapper';
 function LogOut() {
   return (
     <div>
+      <Header />
       <marquee>
-        <Header />
         Come back soon
       </marquee>
       <h1>

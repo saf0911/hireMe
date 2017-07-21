@@ -14,7 +14,7 @@ const nextApp = next({
 });
 const handle = nextApp.getRequestHandler();
 
-const PORT = process.env.Port || 3001;
+const PORT = process.env.Port || 4001;
 
 nextApp.prepare().then(() => {
   const app = express();
@@ -37,7 +37,7 @@ nextApp.prepare().then(() => {
     return response.status(500).json({
       message: err.message
     });
-    
+
   });
 
   app.use(AuthenicationRoute);

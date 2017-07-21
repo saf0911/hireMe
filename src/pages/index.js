@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import withRedux from 'next-redux-wrapper';
 import {initStore} from '../store';
 import Link from 'next/link';
-import ListOfUsers from '../components/ListOfUsers';
+
 
 function IndexPage() {
   return (
@@ -13,7 +13,6 @@ function IndexPage() {
       <h1>
         Hello World
       </h1>
-      <ListOfUsers />
       <Link href="/signin">
         <a>Sign In</a>
       </Link>
