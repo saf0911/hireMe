@@ -7,6 +7,7 @@ function loadUserError(message) {
   };
 }
 
+
 export function loadUsers() {
   return function (dispatch) {
     fetch('/users')
