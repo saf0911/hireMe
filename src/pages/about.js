@@ -8,11 +8,7 @@ import {initStore} from '../store';
 
 
 function AboutPage() {
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 3928d3adb936ecb39b6dafb0d91617314806868a
   return (
     <div>
       <Header />
