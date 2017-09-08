@@ -6,6 +6,7 @@ import {initStore} from '../store';
 import Link from 'next/link';
 
 
+
 function IndexPage() {
   return (
     <div>
@@ -13,6 +14,7 @@ function IndexPage() {
       <h1>
         Hello World
       </h1>
+      
       <Link href="/signin">
         <a>Sign In</a>
       </Link>

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet');
+
+
+body {
+  font-family: 'Special Elite', cursive;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  margin: 0px;
+  padding:0px;
+}
+
+marquee {
+  text-align: center;
+  background-color: pink;
+  margin: 0px;
+  padding: 0px;
+}
+
+.FrontPageMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:  1fr;
+  grid-template-areas:
+    'mypic mytext';
+  grid-gap: 0px;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.FrontPagePic {
+  grid-area: mypic;
+  height: auto;
+  max-width: 100%;
+  margin: 0px;
+}
+
+.FrontPageText {
+  grid-area: mytext;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+}
