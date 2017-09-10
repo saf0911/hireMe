@@ -3,26 +3,24 @@ import mongoose from 'mongoose';
 const userSchema = mongoose.Schema({
   firstName: {
     type: String,
-    maxlength: [ 20, 'We do not need that long of a name' ]
+    required: true,
+    maxlength: [ 30, 'something went wrong' ]
   },
-  lastName: {
-    type: String,
-    maxlength: [ 20, 'That is a long last name' ]
-  },
-  avatar: {
-    type: String,
-    maxlength: [ 20, 'Pictures only' ]
-  },
-  interests: {
-    type: String,
-    maxlength: [ 300, 'Leave some information to start the conversation' ]
-  },
-  username: {
+  email: {
     type: String,
     unique: true,
     required: true,
-    maxlength: [ 20, 'Username does not need to be that long' ]
-  }
+    maxlength: [ 20, 'That is a long email' ]
+  },
+  phone: {
+    type: String,
+    maxlength: [ 20, 'Phone please' ]
+  },
+  message: {
+    type: String,
+    maxlength: [ 500, 'Leave some information to start the conversation' ]
+  },
+  
 
 });
 

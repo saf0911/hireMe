@@ -23,7 +23,7 @@ nextApp.prepare().then(() => {
 
   // Define all you backend handlers here...
   mongoose.Promise = global.Promise;
-  mongoose.connect('mongodb://localhost/DatingSite');
+  mongoose.connect('mongodb://saf0911:Memphis4599@ds151973.mlab.com:51973/scottsjobsearch');
 
   const db = mongoose.connection;
 

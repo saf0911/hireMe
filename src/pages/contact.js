@@ -11,10 +11,10 @@ import PropTypes from 'prop-types';
 
 const FORM_VALUES = {
   firstName: '',
-  lastName: '',
-  avatar: '',
-  interests: '',
-  username: '',
+  email: '',
+  phone: '',
+  message: '',
+
 };
 
 class AddUserPage extends Component {
@@ -39,7 +39,7 @@ class AddUserPage extends Component {
 
     this.setState(FORM_VALUES);
   }
-  
+
 
 
   render() {
@@ -47,7 +47,7 @@ class AddUserPage extends Component {
       <div>
         <Header />
         <h1>
-          Create a profile
+          Get ahold of me
         </h1>
         <form onSubmit={this.handleSubmit.bind(this)}>
 
@@ -55,44 +55,35 @@ class AddUserPage extends Component {
             <input
               type='text'
               name='firstName'
-              placeholder='Add First name'
+              placeholder='Name'
               value={this.state.firstName}
               onChange={this.handleInputChange.bind(this)}
             />
             <br />
-          Last name:<br />
-            <input
-              type='text'
-              name='lastName'
-              placeholder='Add Last name'
-              value={this.state.lastName}
-              onChange={this.handleInputChange.bind(this)}
-             />
-            <br />
-          Avatar: <br />
+          Email: <br />
             <input
               type="text"
-              name="avatar"
+              name="email"
               placeholder="Add Avatar"
-              value={this.state.avatar}
+              value={this.state.email}
               onChange={this.handleInputChange.bind(this)}
             />
             <br />
-          Interests: <br />
+          Phone: <br />
             <input
               type='text'
-              name='interests'
-              placeholder='Add Interests'
-              value={this.state.interests}
+              name='phone'
+              placeholder='Phone'
+              value={this.state.phone}
               onChange={this.handleInputChange.bind(this)}
             />
             <br />
-            User Name:<br />
+            Message:<br />
               <input
                 type='text'
-                name='username'
-                placeholder='Add Last name'
-                value={this.state.username}
+                name='message'
+                placeholder='Message'
+                value={this.state.message}
                 onChange={this.handleInputChange.bind(this)}
                />
             <br /><br />

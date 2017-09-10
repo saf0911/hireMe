@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-// import Link from 'next/Link';
 import {loadUsers, deleteUser} from '../actions';
 import withRedux from 'next-redux-wrapper';
 import {initStore} from '../store';
@@ -18,9 +17,10 @@ class ListOfUsers extends Component {
           return (
             <div key={key} >
               <ul>
-                <li> {user.username} </li>
-                <li> {user.avatar} </li>
-                <li> {user.interests} </li>
+                <li> {user.firstName} </li>
+                <li> {user.email} </li>
+                <li> {user.phone} </li>
+                <li> {user.message} </li>
               </ul>
               <a href={`/details?id=${user._id}`} >View User</a>
               <button onClick=

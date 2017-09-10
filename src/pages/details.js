@@ -28,10 +28,9 @@ class Details extends Component {
         </h1>
         <ul>
           <li> {user.firstName} </li>
-          <li> {user.lastName} </li>
-          <li> {user.avatar} </li>
-          <li> {user.interests} </li>
-          <li> {user.username} </li>
+          <li> {user.email} </li>
+          <li> {user.phone} </li>
+          <li> {user.message} </li>
         </ul>
       </div>
     );
