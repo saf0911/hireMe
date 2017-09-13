@@ -13,7 +13,7 @@ function Resume() {
       <h1 className="name"> Scott Foster</h1>
       <h3 className="title">Programmer</h3>
       <ul>
-        <li className="contact-info ul">(773) 910-88803</li>
+        <li className="contact-info ul">(773) 910-8803</li>
         <li className="contact-info ul">saf0911@gmail.com</li>
       </ul>
 
@@ -88,6 +88,8 @@ function Resume() {
       Jul 2017
       </div>
 
+      <br/>
+
       <div className="education-section">
 
       <div className="school"> Kendall College </div>
@@ -95,19 +97,21 @@ function Resume() {
       </div>
 
       <div className="pull-right">
-      Dec 2008
+        Dec 2008
       </div>
 
-
+      <br />
       <div className="education-section">
 
-      <div className="school"> Columbia College </div>
-      <i className="fa fa-graduation-cap"></i> B.A in Business Administration
+        <div className="school">
+          Columbia College
+        </div>
+        <i className="fa fa-graduation-cap"></i> B.A in Business Administration
       </div>
 
-      <div className="pull-right">
-      Present
-      </div>
+        <div className="pull-right">
+          June 2005
+        </div>
 
 
 

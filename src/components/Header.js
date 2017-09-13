@@ -21,19 +21,27 @@ function Header() {
     </Link>
 
     <style jsx>{`
+
+
+      a {
+        text-align: center;
+        align-self: center;
+        text-decoration: none;
+      }
+
       .navBar {
         list-style-type: none;
         text-decoration: none;
         margin: 0;
         padding: 0em;
-        background-color: lightgrey;
+        background-color: white;
         display: grid;
         grid-template-columns: 4fr  2fr 2fr 2fr 2fr ;
         grid-template-rows:  1fr  ;
         grid-template-areas:
         'logo   home portfolio contact resume';
         grid-gap: 5px 10px;
-        justify-content: flex-start;
+        align-self: center;
   }
 
 
@@ -42,6 +50,8 @@ function Header() {
         display: inline;
         margin: 10px;
         text-decoration: none;
+        align-self: center;
+
       }
 
       .navbar-home {
@@ -49,6 +59,7 @@ function Header() {
         display: inline;
         margin: 10px;
         text-decoration: none;
+        align-self: center;
 
       }
 

@@ -21,7 +21,7 @@ function IndexPage() {
           <h3> Junior Web Developer </h3>
           <h5> HTML CSS JAVASCRIPT REACT REDUX NEXT</h5>
           <marquee>
-            
+
             <img src='/static/img/SF1.jpg' alt='Scott Foster Logo' />
           </marquee>
         </div>
@@ -38,7 +38,7 @@ function IndexPage() {
             background-color: white;
             display: grid;
             grid-template-columns: 2fr 2fr ;
-            grid-template-rows: 2fr 1fr;
+            grid-template-rows: 2fr;
             grid-template-areas:
               'pic pic'
               'text text';
