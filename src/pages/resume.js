@@ -12,22 +12,20 @@ function Resume() {
 
       <h1 className="name"> Scott Foster</h1>
       <h3 className="title">Programmer</h3>
-      <ul>
-        <li className="contact-info ul">(773) 910-8803</li>
-        <li className="contact-info ul">saf0911@gmail.com</li>
-      </ul>
+
 
       <h4 className="section-title"> Profile </h4>
 
-      <h6>
-        Over 8 years of staying at home raising my three kids I needed a new
-        direction. My parenting position was being outsourced to the school system.
-        That is when I decided that coding is my calling.
-        The skills I learned are transitioning nicely.
-        Problem solving, effective communication, project management,
-        and effective team building are soft skills that I have developed and will
-        use to help team succeed.
-      </h6>
+      <h5>
+        My journey in development started with one class at
+        General assemby. I quickly developed a real passion for the complexities involved. I took
+        some time to educate myself before enrolling in the full stack program at
+        Austin Coding Academy. After completing the program I took time to work on
+        personal projects and hone my skills. I will be starting as a teachers assistant
+        for the fall semister at Austin Coding Academy.
+      </h5>
+
+      <hr />
 
       <h4 className="section-title"> Skills </h4>
 
@@ -40,11 +38,23 @@ function Resume() {
           <li className='skills-ul li'>Redux</li>
           <li className='skills-ul li'>Next</li>
         </ul>
+          <br/> <br />
+
+
+      <div className="skill">Soft Skills:</div>
+        <ul className='skills-ul'>
+          <li className='skills-ul li'>Problem solving</li>
+          <li className='skills-ul li'>Effective communicator</li>
+          <li className='skills-ul li'>Project management</li>
+          <li className='skills-ul li'>Team building</li>
+          <li className='skills-ul li'>Relationship building</li>
+
+        </ul>
           <br/>
 
-      <h4 className="section-title">
-        Experience
-      </h4>
+          <hr />
+
+      <h4 className="section-title"> Experience </h4>
 
 
       <div className="company">
@@ -55,21 +65,79 @@ function Resume() {
       </div>
 
 
-      <span className="pull-right">
-        Dec 2008 - Aug 2017
-      </span>
+      <div className="company-description">
+
+        <ul>
+          <li className="company-summary"></li>
+          <li><i className="fa fa-chevron-circle-right"></i>
+            Managed a team ensuring team development and project completion.
+          </li>
+          <li><i className="fa fa-chevron-circle-right"></i>
+            Ensured budget guidelines were met or exceeded.
+          </li>
+          <li><i className="fa fa-chevron-circle-right"></i>
+            Constant problem solving to drive change in the organization
+          </li>
+        </ul>
+
+      </div>
+
+      <br />
+
+      <div className="company">
+        UMB
+      </div>
+      <div className="company-position">
+        <em>Personal Banker</em>
+      </div>
 
 
       <div className="company-description">
 
         <ul>
           <li className="company-summary"></li>
-          <li><i className="fa fa-chevron-circle-right"></i> Abigail</li>
-          <li><i className="fa fa-chevron-circle-right"></i> Annaliese</li>
-          <li><i className="fa fa-chevron-circle-right"></i> Cameron</li>
+          <li><i className="fa fa-chevron-circle-right"></i>
+            Built relationships for sales opportunities
+          </li>
+          <li><i className="fa fa-chevron-circle-right"></i>
+            Worked under pressure to meet team goals
+          </li>
+          <li><i className="fa fa-chevron-circle-right"></i>
+            Met federal and orginizational guidlines for securing personal information
+          </li>
         </ul>
 
       </div>
+
+      <br />
+      <div className="company">
+        Quiktrip
+      </div>
+      <div className="company-position">
+        <em>Manager/Trainer</em>
+      </div>
+
+
+      <div className="company-description">
+
+        <ul>
+          <li className="company-summary"></li>
+          <li><i className="fa fa-chevron-circle-right"></i>
+            Trained part time employees ensuring they met the goals and
+            requirements of the job description
+          </li>
+          <li><i className="fa fa-chevron-circle-right"></i>
+            Managed several employees meeting or exceeding the daily work
+            assignments and ensuring accurate accounting for the shifts.
+          </li>
+          <li><i className="fa fa-chevron-circle-right"></i>
+            Maintained and ordered inventory for the stores I managed
+          </li>
+        </ul>
+
+      </div>
+
+
 
 
       <hr/>
@@ -132,14 +200,19 @@ function Resume() {
       .name {
           margin-top: 0px;
           margin-bottom: 0px;
+          margin-right: 10px;
           font-size: 24px;
+          text-align: right;
       }
 
       .title {
           margin-top: 0px;
           margin-bottom: 0px;
+          margin-right: 10px;
           font-weight: 200;
           font-size: 18px;
+          text-align: right;
+
       }
 
       .contact-info ul {
@@ -147,7 +220,7 @@ function Resume() {
       }
 
       .section-title {
-          font-size: 14px;
+          font-size: 18px;
       }
 
       .skill {

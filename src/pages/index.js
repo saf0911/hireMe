@@ -15,15 +15,11 @@ function IndexPage() {
         <Header />
       </div>
       <div className='home'>
-        <img className='frontPagePic' src='/static/img/myPic.jpg' alt='no pics today' />
+        <img className='frontPagePic' src='/static/img/myPic.JPG' alt='no pics today' />
         <div className='frontPageText'>
           <h1> Scott Foster </h1>
           <h3> Junior Web Developer </h3>
-          <h5> HTML CSS JAVASCRIPT REACT REDUX NEXT</h5>
-          <marquee>
-
-            <img src='/static/img/SF1.jpg' alt='Scott Foster Logo' />
-          </marquee>
+          
         </div>
 
       </div>
