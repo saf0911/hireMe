@@ -47,8 +47,13 @@ class AddUserPage extends Component {
       <div>
         <Header />
         <h1>
-          Get ahold of me
+          Contact me
         </h1>
+        <h4>
+          If you are looking for a junior developer leave your information and I
+          will get back to you as soon as I can. Lets see if I will make a good fit
+          with your organization.
+        </h4>  
         <form onSubmit={this.handleSubmit.bind(this)}>
 
           First name:<br />
@@ -64,7 +69,7 @@ class AddUserPage extends Component {
             <input
               type="text"
               name="email"
-              placeholder="Add Avatar"
+              placeholder="Email"
               value={this.state.email}
               onChange={this.handleInputChange.bind(this)}
             />

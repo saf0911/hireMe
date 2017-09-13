@@ -26,7 +26,7 @@ function Header() {
         text-decoration: none;
         margin: 0;
         padding: 0em;
-        background-color: grey;
+        background-color: lightgrey;
         display: grid;
         grid-template-columns: 4fr  2fr 2fr 2fr 2fr ;
         grid-template-rows:  1fr  ;
