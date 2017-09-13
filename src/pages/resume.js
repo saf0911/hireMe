@@ -29,6 +29,19 @@ function Resume() {
         use to help team succeed.
       </h6>
 
+      <h4 className="section-title"> Skills </h4>
+
+      <div className="skill">Web Development:</div>
+        <ul className='skills-ul'>
+          <li className='skills-ul li'>HTML</li>
+          <li className='skills-ul li'>CSS</li>
+          <li className='skills-ul li'>JavaScript</li>
+          <li className='skills-ul li'>React</li>
+          <li className='skills-ul li'>Redux</li>
+          <li className='skills-ul li'>Next</li>
+        </ul>
+          <br/>
+
       <h4 className="section-title">
         Experience
       </h4>
