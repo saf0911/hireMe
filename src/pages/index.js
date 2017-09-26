@@ -17,14 +17,41 @@ function IndexPage() {
       <div className='home'>
         <img className='frontPagePic' src='/static/img/myPic.JPG' alt='no pics today' />
         <div className='frontPageText'>
-          <h1> Scott Foster </h1>
-          <h3> Junior Web Developer </h3>
-          
+          <h1>
+            Scott Foster
+          </h1>
+          <h3>
+            Junior Web Developer
+          </h3>
+          <h4>
+            Computer stuff I know
+          </h4>
+          <h5>
+            HTML, CSS, JavaScript, React, Redux
+          </h5>
+          <h5>
+            Next, Node, MongoDB, Mongoose
+          </h5>
+          <h5>
+            Express, Atom, VS Code
+          </h5>
+          <h4>
+            Things I do for fun
+          </h4>
+          <h5>
+            Cooking, Eating, Photography
+          </h5>
+
+
+
         </div>
 
       </div>
 
         <style jsx>{`
+          h5 {
+            margin-left: 10px;
+          }
 
           .home {
             list-style-type: none;
@@ -36,8 +63,8 @@ function IndexPage() {
             grid-template-columns: 2fr 2fr ;
             grid-template-rows: 2fr;
             grid-template-areas:
-              'pic pic'
-              'text text';
+              'pic text'
+
             grid-gap: 5px 10px;
             justify-content: flex-start;
             }
@@ -51,7 +78,9 @@ function IndexPage() {
           .frontPageText {
             grid-area: text;
             display: inline;
-            text-align: center;
+            text-align: left;
+            margin-left: 10em;
+            margin-top: 7em;
           }
       `}</style>
 

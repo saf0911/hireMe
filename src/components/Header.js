@@ -5,7 +5,9 @@ function Header() {
   return (
   <div className='navBar'>
     <Link className='navbar-logo' href="/index">
+    <marquee>
       <img src='/static/img/SF22.png' />
+    </marquee>  
     </Link>
     <Link className='navbar-home' href="/index">
       <a>Home</a>

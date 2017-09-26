@@ -7,7 +7,7 @@ import Header from '../components/Header';
 function Resume() {
 
   return (
-    <div>
+    <div className='resumePage'>
       <Header />
 
       <h1 className="name"> Scott Foster</h1>
@@ -18,11 +18,11 @@ function Resume() {
 
       <h5>
         My journey in development started with one class at
-        General assemby. I quickly developed a real passion for the complexities involved. I took
+        General Assembly. I quickly developed a real passion for the complexities involved. I took
         some time to educate myself before enrolling in the full stack program at
         Austin Coding Academy. After completing the program I took time to work on
         personal projects and hone my skills. I will be starting as a teachers assistant
-        for the fall semister at Austin Coding Academy.
+        for the fall semester at Austin Coding Academy.
       </h5>
 
       <hr />
@@ -37,6 +37,12 @@ function Resume() {
           <li className='skills-ul li'>React</li>
           <li className='skills-ul li'>Redux</li>
           <li className='skills-ul li'>Next</li>
+          <li className='skills-ul li'>Node</li>
+          <li className='skills-ul li'>Mongodb</li>
+          <li className='skills-ul li'>mongoose</li>
+          <li className='skills-ul li'>vs code</li>
+          <li className='skills-ul li'>express</li>
+          <li className='skills-ul li'>atom</li>
         </ul>
           <br/> <br />
 
@@ -103,7 +109,7 @@ function Resume() {
             Worked under pressure to meet team goals
           </li>
           <li><i className="fa fa-chevron-circle-right"></i>
-            Met federal and orginizational guidlines for securing personal information
+            Met federal and organizational guidelines for securing personal information
           </li>
         </ul>
 
@@ -149,37 +155,38 @@ function Resume() {
       <div className="education-section">
 
       <div className="school"> Austin Coding Academy </div>
+        <div className="pull-right">
+          Jul 2017
+          </div>
         <i className="fa fa-graduation-cap"></i> Certificate in Information Technology
       </div>
 
-      <div className="pull-right">
-      Jul 2017
-      </div>
+
 
       <br/>
 
       <div className="education-section">
 
       <div className="school"> Kendall College </div>
-      <i className="fa fa-graduation-cap"></i> A.A in Culinary Arts
+        <div className="pull-right">
+          Dec 2008
+          </div>
+          <i className="fa fa-graduation-cap"></i> A.A in Culinary Arts
       </div>
 
-      <div className="pull-right">
-        Dec 2008
-      </div>
 
       <br />
       <div className="education-section">
-
         <div className="school">
           Columbia College
+        </div>
+        <div className="pull-right">
+          June 2005
         </div>
         <i className="fa fa-graduation-cap"></i> B.A in Business Administration
       </div>
 
-        <div className="pull-right">
-          June 2005
-        </div>
+
 
 
 
@@ -195,6 +202,10 @@ function Resume() {
       hr {
           margin-top: 10px;
           margin-bottom: 10px;
+      }
+
+      .resumePage {
+        margin-top: 20px;
       }
 
       .name {
