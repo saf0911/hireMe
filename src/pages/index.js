@@ -8,14 +8,16 @@ import {initStore} from '../store';
 
 
 
+
 function IndexPage() {
+
   return (
     <div>
       <div>
         <Header />
       </div>
       <div className='home'>
-        <img className='frontPagePic' src='/static/img/myPic.JPG' alt='no pics today' />
+        <img className='frontPagePic' src='/static/img/compypic.jpeg' alt='no pics today' />
         <div className='frontPageText'>
           <h1>
             Scott Foster
@@ -49,6 +51,14 @@ function IndexPage() {
       </div>
 
         <style jsx>{`
+
+
+          h1 {
+            font-size: 36px;
+            font-family: ebgaramond;
+
+          }
+
           h5 {
             margin-left: 10px;
           }
@@ -80,7 +90,7 @@ function IndexPage() {
             display: inline;
             text-align: left;
             margin-left: 8em;
-            margin-top: 12em;
+            margin-top: 10em;
           }
       `}</style>
 
