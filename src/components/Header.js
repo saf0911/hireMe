@@ -7,7 +7,7 @@ function Header() {
     <Link className='navbar-logo' href="/index">
     <marquee>
       <img src='/static/img/SF22.png' />
-    </marquee>  
+    </marquee>
     </Link>
     <Link className='navbar-home' href="/index">
       <a>Home</a>
@@ -20,6 +20,9 @@ function Header() {
     </Link>
     <Link className='navbar-resume' href="/resume">
       <a>Resume</a>
+    </Link>
+    <Link className='navbar-photos' href="/photos">
+      <a>Photos</a>
     </Link>
 
     <style jsx>{`
@@ -38,10 +41,10 @@ function Header() {
         padding: 0em;
         background-color: white;
         display: grid;
-        grid-template-columns: 4fr  2fr 2fr 2fr 2fr ;
+        grid-template-columns: 4fr  2fr 2fr 2fr 2fr 2fr ;
         grid-template-rows:  1fr  ;
         grid-template-areas:
-        'logo   home portfolio contact resume';
+        'logo   home portfolio contact resume photos';
         grid-gap: 5px 10px;
         align-self: center;
   }
@@ -86,6 +89,15 @@ function Header() {
         display: inline;
         margin: 10px;
         text-decoration: none;
+
+      }
+
+      .navbar-photos {
+        grid-area: home;
+        display: inline;
+        margin: 10px;
+        text-decoration: none;
+        align-self: center;
 
       }
   `}</style>

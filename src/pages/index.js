@@ -79,8 +79,8 @@ function IndexPage() {
             grid-area: text;
             display: inline;
             text-align: left;
-            margin-left: 10em;
-            margin-top: 7em;
+            margin-left: 8em;
+            margin-top: 12em;
           }
       `}</style>
 
