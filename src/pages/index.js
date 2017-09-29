@@ -52,6 +52,16 @@ function IndexPage() {
 
         <style jsx>{`
 
+          @font-face {
+            font-family: 'ebgaramond';
+            src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
+          }
+
+          @font-face {
+            font-family: 'quicksand';
+            src: url('../static/fonts/quicksand/Quicksand-Regular.ttf') format('truetype')
+          }
+
 
           h1 {
             font-size: 36px;
@@ -59,8 +69,17 @@ function IndexPage() {
 
           }
 
+          h3 {
+            font-family: quicksand;
+          }
+
+          h4 {
+            font-family: ebgaramond;
+          }
+
           h5 {
             margin-left: 10px;
+            font-family: quicksand;
           }
 
           .home {
@@ -91,6 +110,76 @@ function IndexPage() {
             text-align: left;
             margin-left: 8em;
             margin-top: 10em;
+          }
+
+
+
+          @media only screen and (min-width : 321px) {
+            @font-face {
+              font-family: 'ebgaramond';
+              src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
+            }
+
+            @font-face {
+              font-family: 'quicksand';
+              src: url('../static/fonts/quicksand/Quicksand-Regular.ttf') format('truetype')
+            }
+
+
+            h1 {
+              font-size: 24px;
+              font-family: ebgaramond;
+
+            }
+
+            h3 {
+              font-family: quicksand;
+            }
+
+            h4 {
+              font-family: ebgaramond;
+            }
+
+            h5 {
+              margin-left: 10px;
+              font-family: quicksand;
+            }
+
+            .home {
+              list-style-type: none;
+              text-decoration: none;
+              margin: 0;
+              padding: 0em;
+              background-color: white;
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: auto;
+              grid-template-areas:
+                'pic'
+                'text'
+              grid-gap: 5px 10px;
+              justify-content: flex-start;
+              }
+
+            .frontPagePic {
+              grid-area: pic;
+              width: 100%;
+              display: inline;
+            }
+
+            .frontPageText {
+              grid-area: text;
+              display: inline;
+              text-align: left;
+              margin-left: 2em;
+              margin-top: 15em;
+            }
+          }
+
+          @media only screen and (min-device-width : 768px) and
+            (max-device-width : 1024px) and (orientation : landscape) and
+            (-webkit-min-device-pixel-ratio : 2) {
+
           }
       `}</style>
 

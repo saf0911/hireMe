@@ -53,10 +53,10 @@ class AddUserPage extends Component {
           If you are looking for a junior developer leave your information and I
           will get back to you as soon as I can. Lets see if I will make a good fit
           with your organization.
-        </h4>  
+        </h4>
         <form onSubmit={this.handleSubmit.bind(this)}>
 
-          First name:<br />
+          First Name:<br />
             <input
               type='text'
               name='firstName'
@@ -84,7 +84,7 @@ class AddUserPage extends Component {
             />
             <br />
             Message:<br />
-              <input
+              <input 
                 type='text'
                 name='message'
                 placeholder='Message'
@@ -95,6 +95,46 @@ class AddUserPage extends Component {
           <input type="submit" value="Submit" />
 
         </form>
+
+
+        <style jsx>{`
+
+          @font-face {
+            font-family: 'ebgaramond';
+            src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
+          }
+
+          @font-face {
+            font-family: 'quicksand';
+            src: url('../static/fonts/quicksand/Quicksand-Regular.ttf') format('truetype')
+          }
+
+
+          h1 {
+            font-size: 36px;
+            font-family: ebgaramond;
+            margin-top: 2em;
+
+          }
+
+          h4 {
+            font-family: quicksand;
+
+          }
+
+          form {
+              font-family: ebgaramond;
+          }
+
+
+
+
+      `}</style>
+
+
+
+
+
       </div>
     );
   }

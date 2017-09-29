@@ -85,6 +85,11 @@ function Photo() {
 
       <style jsx> {`
 
+        @font-face {
+          font-family: 'ebgaramond';
+          src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
+        }
+
         ul {
           list-style-type: none;
           text-decoration: none;
@@ -98,6 +103,11 @@ function Photo() {
           'photo photo photo';
           grid-gap: 10px 10px;
           align-self: center;
+        }
+
+        h2 {
+          font-family: ebgaramond;
+          text-align: center;
         }
 
         li {
