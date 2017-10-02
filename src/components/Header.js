@@ -8,7 +8,7 @@ function Header() {
     <Link className='navbar-logo' href="/index">
       <img src='/static/img/SF22.png' />
     </Link>
-    <div className='navLinks'>
+    <div className='navbar-Links'>
       <Link className='navbar-home' href="/index">
         <a>Home</a>
       </Link>
@@ -29,100 +29,7 @@ function Header() {
 
 
     <style jsx>{`
-
-      @font-face {
-        font-family: 'ebgaramond';
-        src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
-      }
-
-      hr {
-        color: black;
-        padding-bottom: 5px;
-      }
-
-      a {
-        text-align: center;
-        align-self: center;
-        text-decoration: none;
-      }
-
-      .navBar {
-        list-style-type: none;
-        text-decoration: none;
-
-
-        background-color: white;
-        display: grid;
-        grid-template-columns: 4fr  2fr 2fr 2fr 2fr 2fr ;
-        grid-template-rows:  1fr  ;
-        grid-template-areas:
-        'logo   home portfolio contact resume photos';
-        grid-gap: 5px 10px;
-        align-self: center;
-        font-family: ebgaramond;
-        border-bottom: 1px solid black;
-  }
-
-
-      .navbar-logo {
-        grid-area: logo;
-        display: inline;
-        margin: 10px;
-        text-decoration: none;
-        align-self: center;
-        padding-bottom: 10px;
-
-      }
-
-      .navLinks {
-        grid-area: navBarLinks;
-      }
-
-      .navbar-home {
-        grid-area: home;
-        display: inline;
-        margin: 10px;
-        text-decoration: none;
-        align-self: center;
-
-      }
-
-      .navbar-portfolio {
-        grid-area: portfolio;
-        display: inline;
-        margin: 10px;
-        text-decoration: none;
-
-      }
-
-      .navbar-contact {
-        grid-area: contact;
-        display: inline;
-        margin: 10px;
-        text-decoration: none;
-
-      }
-
-      .navbar-resume {
-        grid-area: resume;
-        display: inline;
-        margin: 10px;
-        text-decoration: none;
-
-      }
-
-      .navbar-photos {
-        grid-area: home;
-        display: inline;
-        margin: 10px;
-        text-decoration: none;
-        align-self: center;
-
-      }
-
-
-
-      @media only screen and (min-width : 321px) {
+      @media only screen and (min-width : 321px) and (max-width : 767px)  {
         @font-face {
           font-family: 'ebgaramond';
           src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
@@ -145,24 +52,26 @@ function Header() {
           background-color: white;
           display: grid;
           grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr;
+          grid-template-rows: 1fr ;
           grid-template-areas:
           'logo '
           'navBarLinks';
           align-self: center;
           font-family: ebgaramond;
+          grid-gap: 10px 10px;
+          margin-bottom: -50px;
 
 
         }
 
-        .navLinks {
+        .navbar-Links {
           grid-area: navBarLinks;
           display: grid;
-          grid-template-columns: 1fr ;
-          grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+          grid-template-rows: repeat(5, 1fr) ;
           grid-template-areas:
           'home portfolio contact resume photos';
-          grid-gap: 5px 20px;
+          grid-gap: 5px 0px;
+
 
         }
 
@@ -171,7 +80,7 @@ function Header() {
           display: inline;
           text-decoration: none;
           align-self: center;
-          padding: 10px;
+
 
 
         }
@@ -179,7 +88,6 @@ function Header() {
         .navbar-home {
           grid-area: home;
           display: inline;
-          padding: 5px;
           text-decoration: none;
 
 
@@ -188,16 +96,13 @@ function Header() {
         .navbar-portfolio {
           grid-area: portfolio;
           display: inline;
-          padding: 5px;
           text-decoration: none;
-          margin: 5px;
 
         }
 
         .navbar-contact {
           grid-area: contact;
           display: inline;
-          padding: 5px;
           text-decoration: none;
 
         }
@@ -205,7 +110,6 @@ function Header() {
         .navbar-resume {
           grid-area: resume;
           display: inline;
-          padding: 5px;
           text-decoration: none;
 
         }
@@ -213,12 +117,121 @@ function Header() {
         .navbar-photos {
           grid-area: photos;
           display: inline;
-          padding: 5px;
           text-decoration: none;
 
 
         }
       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (min-width: 768px) {
+      @font-face {
+        font-family: 'ebgaramond';
+        src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
+      }
+
+      hr {
+        color: black;
+
+      }
+
+      a {
+        text-align: center;
+        align-self: center;
+        text-decoration: none;
+      }
+
+      .navBar {
+        list-style-type: none;
+        text-decoration: none;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 4fr  4fr ;
+        grid-template-rows:  1fr  ;
+        grid-template-areas:
+        'logo   navbar-Links';
+        grid-gap: 5px 10px;
+        font-family: ebgaramond;
+        border-bottom: 1px solid black;
+        margin-bottom: -30px;
+  }
+
+
+      .navbar-logo {
+        grid-area: logo;
+        display: inline;
+        margin: 10px;
+        text-decoration: none;
+        align-self: center;
+
+
+      }
+
+      .navbar-Links {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr) ;
+        grid-template-areas:
+        'home portfolio contact resume photos';
+        grid-gap: 5px 25px;
+        margin-bottom: -25px;
+        padding-bottom: 0px;
+        align-self: center;
+        margin-top: 25px;
+      }
+
+      .navbar-home {
+        grid-area: home;
+        display: inline;
+        text-decoration: none;
+        align-self: center;
+
+      }
+
+      .navbar-portfolio {
+        grid-area: portfolio;
+        display: inline;
+        text-decoration: none;
+
+      }
+
+      .navbar-contact {
+        grid-area: contact;
+        display: inline;
+        text-decoration: none;
+
+      }
+
+      .navbar-resume {
+        grid-area: resume;
+        display: inline;
+        text-decoration: none;
+
+      }
+
+      .navbar-photos {
+        grid-area: home;
+        display: inline;
+        text-decoration: none;
+        align-self: center;
+
+      }
+
+    }
+
+
   `}</style>
 
 
