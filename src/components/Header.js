@@ -35,10 +35,7 @@ function Header() {
           src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
         }
 
-        hr {
-          color: black;
-          padding-bottom: 5px;
-        }
+
 
         a {
           text-align: center;
@@ -128,25 +125,13 @@ function Header() {
 
 
 
-
-
-
-
-
-
-
-
-
     @media only screen and (min-width: 768px) {
       @font-face {
         font-family: 'ebgaramond';
         src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
       }
 
-      hr {
-        color: black;
 
-      }
 
       a {
         text-align: center;
@@ -165,7 +150,6 @@ function Header() {
         'logo   navbar-Links';
         grid-gap: 5px 10px;
         font-family: ebgaramond;
-        border-bottom: 1px solid black;
         margin-bottom: -30px;
   }
 
