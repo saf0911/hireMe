@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "babel-node src/index",
-    "build": "next build src",
+    "build": "next build",
     "start": "babel-node src/index",
     "lint": "eslint src"
   },
