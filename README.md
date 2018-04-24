@@ -75,12 +75,3 @@ Run the dev server via `yarn start`
 <!--* Create a Route and Controller for your thing-->
 <!--* In the Route, create routes for getting all things, getting one thing by id, deleting one thing, updating one thing, and creating one thing-->
 <!--* In the Controller, create functions for list,show,create,update,remove-->
-
-
->>>>>>> 4dced62f4ade8ede6ace9b17e1f2a551d56ae0a1
-# Personal
-# Personal
-# Personal
-# hireMe
-# hireMe
-# hireMe
