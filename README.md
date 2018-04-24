@@ -76,41 +76,7 @@ Run the dev server via `yarn start`
 <!--* In the Route, create routes for getting all things, getting one thing by id, deleting one thing, updating one thing, and creating one thing-->
 <!--* In the Controller, create functions for list,show,create,update,remove-->
 
-## Styling
-* Add styling to your components via Style JSX. See documentation of Next.js repository: https://github.com/zeit/next.js#css
 
-## Points
-* When I yarn start, the web page loads with no errors - 10pts
-* I can navigate to the list and create screen from links - 10pts
-* I can enter information into the create screen and click save. If I go back to the list screen, that new information is there. - 20pts
-* If I go to the list screen it will show all current existing information - 20pts
-* The list screen has a view link for each item. If I click that link the detail screen appears. The details of the item are shown. - 20pts
-* If I click the delete button on the list, the item I clicked will be removed from the list - 20pts
-
-
-## Extra Credit
-* Edit Component
-  * Create a component to edit your things. It will be almost the same as the create component.
-  * Use a prop that has the array of your models
-  * Use a parameter from the route path ?id=<id> to find the model to show
-  * Populate the properties of the model into the inputs
-  * onSubmit populate the information from state back into the model, call a prop function called updateThing(thing)
-* Create a container for the edit component
-  * mapsStateToProps for the array of models
-  * mapDispatchToProps for an action updateThing
-* Create an action updateThing(thing)
-  * do a fetch put to "/things/" + thing._id
-  * when the fetch is complete, dispatch to loadThings
-* Add a page to the edit container with a variable ?id=<id>
-* In the list components, add a Link for the edit route.
-
-## Bonus
-* Create the edit component by reusing the create component
-# acaFinal
-# acaFinal
-<<<<<<< HEAD
-# acaFinal
-=======
 >>>>>>> 4dced62f4ade8ede6ace9b17e1f2a551d56ae0a1
 # Personal
 # Personal

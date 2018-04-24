@@ -6,14 +6,13 @@ function Header() {
   <div className='navBar'>
 
     <Link className='navbar-logo' href="/index">
+
       <img src='/static/img/SF22.png' />
+
     </Link>
     <div className='navbar-Links'>
       <Link className='navbar-home' href="/index">
         <a>Home</a>
-      </Link>
-      <Link className='navbar-portfolio' href="/portfolio">
-        <a>Portfolio</a>
       </Link>
       <Link className='navbar-contact' href="/contact">
         <a>Contact</a>

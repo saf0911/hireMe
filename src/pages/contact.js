@@ -46,56 +46,57 @@ class AddUserPage extends Component {
     return (
       <div>
         <Header />
-        <h1>
-          Contact me
-        </h1>
-        <h4>
-          If you are looking for a junior developer leave your information and I
-          will get back to you as soon as I can. Lets see if I will make a good fit
-          with your organization.
-        </h4>
-        <form onSubmit={this.handleSubmit.bind(this)}>
+        <div className='contact-body'>
+          <h1>
+            Contact me
+          </h1>
+          <h4>
+            If you are looking for a Project Manager leave your information and I
+            will get back to you as soon as I can. Lets see if I will make a good fit
+            with your organization.
+          </h4>
+          <form onSubmit={this.handleSubmit.bind(this)}>
 
-          First Name:<br />
-            <input
-              type='text'
-              name='firstName'
-              placeholder='Name'
-              value={this.state.firstName}
-              onChange={this.handleInputChange.bind(this)}
-            />
-            <br />
-          Email: <br />
-            <input
-              type="text"
-              name="email"
-              placeholder="Email"
-              value={this.state.email}
-              onChange={this.handleInputChange.bind(this)}
-            />
-            <br />
-          Phone: <br />
-            <input
-              type='text'
-              name='phone'
-              placeholder='Phone'
-              value={this.state.phone}
-              onChange={this.handleInputChange.bind(this)}
-            />
-            <br />
-            Message:<br />
-              <input 
+            First Name:<br />
+              <input
                 type='text'
-                name='message'
-                placeholder='Message'
-                value={this.state.message}
+                name='firstName'
+                placeholder='Name'
+                value={this.state.firstName}
                 onChange={this.handleInputChange.bind(this)}
-               />
-            <br /><br />
-          <input type="submit" value="Submit" />
+              />
+              <br />
+            Email: <br />
+              <input
+                type="text"
+                name="email"
+                placeholder="Email"
+                value={this.state.email}
+                onChange={this.handleInputChange.bind(this)}
+              />
+              <br />
+            Phone: <br />
+              <input
+                type='text'
+                name='phone'
+                placeholder='Phone'
+                value={this.state.phone}
+                onChange={this.handleInputChange.bind(this)}
+              />
+              <br />
+              Message:<br />
+                <input
+                  type='text'
+                  name='message'
+                  placeholder='Message'
+                  value={this.state.message}
+                  onChange={this.handleInputChange.bind(this)}
+                 />
+              <br /><br />
+            <input type="submit" value="Submit" />
 
-        </form>
-
+          </form>
+        </div>
 
         <style jsx>{`
 
@@ -124,6 +125,12 @@ class AddUserPage extends Component {
 
           form {
               font-family: ebgaramond;
+              margin-left: 10%;
+
+          }
+
+          .contact-body {
+            margin-top: -5%;
           }
 
 

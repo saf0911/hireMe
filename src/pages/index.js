@@ -23,8 +23,17 @@ function IndexPage() {
             Scott Foster
           </h1>
           <h3>
-            Junior Web Developer
+            Project Manager
           </h3>
+          <h5>
+            Ability to motivate team memebers to accomplish the established goals
+          </h5>
+          <h5>
+            Excels at relationship building
+          </h5>
+          <h5>
+            Ensuring return on investment
+          </h5>
           <h4>
             Computer stuff I know
           </h4>

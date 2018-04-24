@@ -18,17 +18,34 @@ function Resume() {
         <h4 className="section-title"> Profile </h4>
 
         <h5>
-          My journey in development started with one class at
-          General Assembly. I quickly developed a real passion for the complexities involved. I took
-          some time to educate myself before enrolling in the full stack program at
-          Austin Coding Academy. After completing the program I took time to work on
-          personal projects and hone my skills. I will be starting as a teachers assistant
-          for the fall semester at Austin Coding Academy.
+          Thank you for taking time to read this. I really appreciate it.
+          You have come to the right place if you are looking for a Project Manager.
+          I have been in the field for years but just recently started doing it professionally.
+          I just finished up a short term contract to bring a site together before launch.
+          I coordinated an international team of developers to bring individuals together to
+          be a team in the last push to get the site launched.
         </h5>
 
         <hr />
 
         <h4 className="section-title"> Skills </h4>
+
+        <div className="skill">Project Management:</div>
+          <ul className='skills-ul'>
+            <li className='skills-ul li'>
+              Great verbal comminucations with team members from a spectrum of skill sets
+            </li>
+            <li className='skills-ul li'>
+              Able to handle several issues at a time from many different directions.
+            </li>
+            <li className='skills-ul li'>Problem solving</li>
+            <li className='skills-ul li'>Effective communicator</li>
+            <li className='skills-ul li'>Team building</li>
+            <li className='skills-ul li'>Relationship building</li>
+          </ul>
+
+          <br />
+          <br />
 
         <div className="skill">Web Development:</div>
           <ul className='skills-ul'>
@@ -47,28 +64,16 @@ function Resume() {
           </ul>
             <br/> <br />
 
-
-        <div className="skill">Soft Skills:</div>
-          <ul className='skills-ul'>
-            <li className='skills-ul li'>Problem solving</li>
-            <li className='skills-ul li'>Effective communicator</li>
-            <li className='skills-ul li'>Project management</li>
-            <li className='skills-ul li'>Team building</li>
-            <li className='skills-ul li'>Relationship building</li>
-
-          </ul>
-            <br/>
-
             <hr />
 
         <h4 className="section-title"> Experience </h4>
 
 
         <div className="company">
-          Foster Household
+          Rautenberg Media
         </div>
         <div className="company-position">
-          <em>Stay at Home Dad</em>
+          <em>Project Management/QA Engineer</em>
         </div>
 
 
@@ -77,13 +82,18 @@ function Resume() {
           <ul>
             <li className="company-summary"></li>
             <li><i className="fa fa-chevron-circle-right"></i>
-              Managed a team ensuring team development and project completion.
+            Managed a global team of developers
             </li>
             <li><i className="fa fa-chevron-circle-right"></i>
-              Ensured budget guidelines were met or exceeded.
+            Ensured product goals were clearly communicated and
+              completed to standards
             </li>
             <li><i className="fa fa-chevron-circle-right"></i>
-              Constant problem solving to drive change in the organization
+            Used scrum and agile methods to ensure maximum
+              efficiency of all involved
+            </li>
+            <li><i className="fa fa-chevron-circle-right"></i>
+              Wrote smoke tests to ensure the site was functioning properly
             </li>
           </ul>
 
@@ -145,8 +155,6 @@ function Resume() {
         </div>
 
 
-
-
         <hr/>
 
 
@@ -159,10 +167,8 @@ function Resume() {
           <div className="pull-right">
             Jul 2017
             </div>
-          <i className="fa fa-graduation-cap"></i> Certificate in Information Technology
+          <i className="fa fa-graduation-cap"></i> Certificate in Full stack Web Development
         </div>
-
-
 
         <br/>
 
@@ -186,6 +192,11 @@ function Resume() {
           </div>
           <i className="fa fa-graduation-cap"></i> B.A in Business Administration
         </div>
+
+        <a className="resume-download"
+          href="/static/ScottFosterResume.pdf" download="Scott-Foster-Resume">
+            Download PDF Resume
+        </a>
 
       </div>
 
@@ -279,7 +290,15 @@ function Resume() {
       }
 
       .education-section {
-          margin-bottom: 5px;
+          margin-bottom: 20px;
+      }
+
+      .resume-download {
+          text-decoration: none;
+          background: #054A25;
+          color: white;
+          padding: 10px;
+          align-self: center;
       }
 
           `}</style>
