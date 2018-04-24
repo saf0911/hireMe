@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "babel-node src/index",
-    "build": "next build",
+    "build": "next build src",
     "start": "babel-node src/index",
     "lint": "eslint src"
   },
@@ -21,6 +21,7 @@
     "mongoose": "^4.10.5",
     "next": "^3.2.1",
     "next-redux-wrapper": "^1.1.2",
+    "node": "^9.11.0",
     "passport": "^0.3.2",
     "passport-jwt": "^2.2.1",
     "passport-local": "^1.0.0",
@@ -36,7 +37,7 @@
     "thunk": "^0.0.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-plugin-syntax-async-functions": "^6.13.0",
