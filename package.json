@@ -8,11 +8,11 @@
   "scripts": {
     "dev": "babel-node src/index",
     "build": "next build src",
-    "start": "babel-node src/index.js",
+    "start": "node src/index.js",
     "lint": "eslint src"
   },
   "dependencies": {
-    
+
     "body-parser": "^1.17.2",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
