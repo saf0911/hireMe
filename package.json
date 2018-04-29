@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "babel-node src/index",
     "build": "next build src",
-    "start": "babel-node src/index",
+    "start": "node src/index",
     "lint": "eslint src"
   },
   "dependencies": {
