@@ -5,13 +5,9 @@
         "transform-object-rest-spread",
     ],
     "presets": [
-        
+
         "next/babel",
         "stage-0",
-        "env", {
-      "targets": {
-        "node": "current"
-      }
-    }
+        "env"
     ]
 }
